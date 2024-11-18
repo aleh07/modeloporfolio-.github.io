@@ -1,80 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>ProgramaYa!</title>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Responsiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                text-align: left;
+            }
+            .column {
+                flex: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <p class="logo">ProgramaYa!</p>
-            <nav>
-                <a href="#somos-proya">Quienes Somos</a>
-                <a href="#nuestros-programas">Nuestros Programas</a>
-                <a href="#caracteristicas">Características</a>
-            </nav>
-        </div>
+        <h1>Mi Página Web Responsiva</h1>
     </header>
-
-    <section id="hero">
-        <h1>Aprendé a Programar <br>con los Mejores</h1>
-        <button>APLICÁ YA!</button>
-    </section>
-
-    <section id="somos-proya">
-        <div class="container">
-            <div class="img-container"></div>
-            <div class="texto">
-
-                <h2>Somos <span class="color-acento">ProgramaYa!</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+                <h2>Columna 1</h2>
+                <p>Contenido de la columna 1.</p>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+                <h2>Columna 2</h2>
+                <p>Contenido de la columna 2.</p>
+            </div>
+            <div class="column" style="background-color:#ccc;">
+                <h2>Columna 3</h2>
+                <p>Contenido de la columna 3.</p>
             </div>
         </div>
-    </section>
-
-    <section id="nuestros-programas">
-        <div class="container">
-            <h2>Nuestros Programas</h2>
-            <div class="programas">
-                <div class="carta">
-                    <h3>Programador Front-end</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
-                    <button>+ Info</button>
-                </div>
-                <div class="carta">
-                    <h3>Programador Full-Stack</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
-                    <button>+ Info</button>
-                </div>
-                <div class="carta">
-                    <h3>Programador Python</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
-                    <button>+ Info</button>
-                </div>  
-            </div>
-        </div>
-    </section>
-
-    <section id="caracteristicas">
-        <div class="container">
-            <ul>
-                <li>✔️ 100% online</li>
-                <li>✔️ Flexibilidad de horarios</li>
-                <li>✔️ Soporte 1:1</li>
-                <li>✔️ Asistencia financiera</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="final">
-        <h2>Listo para programar?</h2>
-        <button>APLICÁ YA!</button>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; ProgramaYa 2021</p>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
